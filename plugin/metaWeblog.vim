@@ -3,7 +3,8 @@ scriptencoding utf-8
 
 "let g:weblog_id       = 'rsrchboy'
 "let g:weblog_password = 'XXXXXXXXXXXX'
-let s:api             = webapi#metaWeblog#proxy("http://wps.io/xmlrpc.php")
+"let s:api             = webapi#metaWeblog#proxy("http://wps.io/xmlrpc.php")
+let s:api             = webapi#metaWeblog#proxy(g:weblog_url)
 
 function! WPLoadPost()
 
