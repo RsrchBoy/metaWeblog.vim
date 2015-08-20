@@ -1,4 +1,9 @@
 
+if exists("g:loaded_metaweblog")
+    finish
+end
+let g:loaded_metaweblog = 1
+
 scriptencoding utf-8
 
 "let g:weblog_id       = 'rsrchboy'
