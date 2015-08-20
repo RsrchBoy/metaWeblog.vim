@@ -33,7 +33,7 @@ function! WPSavePost()
 
     "editPost(postid, username, password, content, publish) dict
     let l:success = s:api.editPost(b:post_id, g:weblog_id, g:weblog_password, {
-                \   'description': join(getline(1, "$"), "\n"), 
+                \   'description': join(getline(1, "$"), "\n"),
                 \ }, webapi#xmlrpc#false())
 
     let b:post_last_success = l:success
